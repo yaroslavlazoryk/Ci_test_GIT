@@ -4,7 +4,7 @@
 
 public with sharing class MyClass {
     public Integer nonstaticbro = 0;
-    public static Integer staticbro = 1;
+    public static Integer staticbro = 2;
 
     public class RGB {
 

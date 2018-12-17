@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Contact --></label>
+        <name>YS2__Contact__c</name>
+        <relationshipLabel><!-- Yousign Signatories --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Email --></label>
+        <name>YS2__Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order --></label>
+        <name>YS2__Order__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phone --></label>
+        <name>YS2__Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Role --></label>
+        <name>YS2__Role__c</name>
+        <picklistValues>
+            <masterLabel>Signatory</masterLabel>
+            <translation><!-- Signatory --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Validator</masterLabel>
+            <translation><!-- Validator --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>YS2__Status__c</name>
+        <picklistValues>
+            <masterLabel>Cancelled</masterLabel>
+            <translation><!-- Cancelled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Draft</masterLabel>
+            <translation><!-- Draft --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Signed</masterLabel>
+            <translation><!-- Signed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted</masterLabel>
+            <translation><!-- Submitted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Terminated</masterLabel>
+            <translation><!-- Terminated --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Yousign Procedure --></label>
+        <name>YS2__Yousign_Procedure__c</name>
+        <relationshipLabel><!-- Yousign Signatories --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Yousign Signatory Id --></label>
+        <name>YS2__Yousign_Signatory_Id__c</name>
+    </fields>
+</CustomObjectTranslation>

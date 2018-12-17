@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>MyCar</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>MyCars</value>
+    </caseValues>
+    <fields>
+        <label><!-- Cathegory --></label>
+        <name>Cathegory__c</name>
+        <picklistValues>
+            <masterLabel>passenger</masterLabel>
+            <translation><!-- passenger --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>sport</masterLabel>
+            <translation><!-- sport --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>truck</masterLabel>
+            <translation><!-- truck --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Model --></label>
+        <name>Model__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Owner__c</name>
+        <relationshipLabel><!-- MyCars --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Speed --></label>
+        <name>Speed__c</name>
+    </fields>
+    <layouts>
+        <layout>MyCar Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

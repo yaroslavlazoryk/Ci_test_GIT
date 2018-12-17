@@ -1,0 +1,7 @@
+<!--
+ - Created by new on 23.06.2017.
+ -->
+
+<apex:page id="DisplayUserInfo">
+    {! $User.FirstName}
+</apex:page>

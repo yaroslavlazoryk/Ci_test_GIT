@@ -1,0 +1,32 @@
+<apex:component controller="testComponentController">
+  <apex:attribute name="attr" type="string" description="fff" assignTo="{!test}"/>
+  <apex:outputPanel id="showstate" >
+    <p><apex:outputText value="Clicked? {!state}"/></p> 
+       
+
+    <apex:form >
+    
+              {!test}   
+    <apex:CommandButton onclick="manageFavoriteSnack('{!test}')" value=" Click Me "  rerender="showstate"/> 
+       <apex:actionFunction action="{!methodOne}" name="methodOneInJavascript"  rerender="showstate">
+        <apex:param name="firstParam" assignTo="{!test}" value="{!test}" />
+    </apex:actionFunction>
+    <apex:commandButton value="gggg" action="{!methodOne}"/>
+    </apex:form>
+    <script type="text/javascript">
+        function manageFavoriteSnack(a) {
+            
+            console.log(a);
+              var bb = a +"Yes!" + a;
+              console.log(bb);
+            methodOneInJavascript(bb);
+        }
+    </script>
+  
+ 
+
+  
+  </apex:outputPanel>
+  
+  
+</apex:component>

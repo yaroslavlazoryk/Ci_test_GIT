@@ -1,0 +1,27 @@
+<!--
+ - Created by new on 23.06.2017.
+ -->
+
+<apex:page standardController="Account" recordSetVar="accounts">
+    <apex:pageBlock title="Account List">
+
+        <!-- Contacts List -->
+
+        <!--<apex:column value="{! ct.FirstName }"/>
+            <apex:column value="{! ct.LastName }"/>
+            <apex:column value="{! ct.Email }"/>
+            <apex:column value="{! ct.Account.Name }"/>-->
+        <apex:repeat value="{!accounts}" var="a">
+            <li>
+                <apex:outputLink value="{!URLFOR($Action.Account.View, a.Id)}">View</apex:outputLink>
+                    {! a.Id}
+
+            </li>
+
+
+
+        </apex:repeat>
+
+
+    </apex:pageBlock>
+</apex:page>

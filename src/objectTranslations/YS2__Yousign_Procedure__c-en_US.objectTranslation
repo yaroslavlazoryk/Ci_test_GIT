@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Date of cancellation --></label>
+        <name>YS2__Date_of_cancellation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of signature --></label>
+        <name>YS2__Date_of_signature__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of submission --></label>
+        <name>YS2__Date_of_submission__c</name>
+    </fields>
+    <fields>
+        <label><!-- Error Message --></label>
+        <name>YS2__Error_Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>YS2__Opportunity__c</name>
+        <relationshipLabel><!-- Yousign Procedures --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Ordered --></label>
+        <name>YS2__Ordered__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response --></label>
+        <name>YS2__Response__c</name>
+    </fields>
+    <fields>
+        <label><!-- Signing process applicant --></label>
+        <name>YS2__Signing_process_applicant__c</name>
+        <relationshipLabel><!-- Yousign Procedures --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>YS2__Status__c</name>
+        <picklistValues>
+            <masterLabel>Cancelled</masterLabel>
+            <translation><!-- Cancelled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Draft</masterLabel>
+            <translation><!-- Draft --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Failed</masterLabel>
+            <translation><!-- Failed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Signed</masterLabel>
+            <translation><!-- Signed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted</masterLabel>
+            <translation><!-- Submitted --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Yousign Procedure Id --></label>
+        <name>YS2__Yousign_Procedure_Id__c</name>
+    </fields>
+</CustomObjectTranslation>

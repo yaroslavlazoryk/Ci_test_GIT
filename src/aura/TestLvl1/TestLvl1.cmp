@@ -1,0 +1,10 @@
+<!--
+ - Created by new on 18.01.2018.
+ -->
+
+<aura:component description="TestLvl1">
+    <aura:attribute name="attr" type="String" default="himan0"/>
+    {!v.attr}
+    <c:TestLvl2 attr="{!v.attr}"/>
+    <lightning:button label="testlvl1" onclick="{!c.changeAttr}"/>
+</aura:component>

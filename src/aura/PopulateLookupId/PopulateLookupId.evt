@@ -1,0 +1,5 @@
+<aura:event type="APPLICATION" description="Populate lookup" >
+	<aura:attribute name="sObjectId" type="Id" required="true" description="The Id of the SObject that was created." />
+	<aura:attribute name="sObjectName" type="String" required="true" description="The name of the SObject that was created." />
+	<aura:attribute name="instanceId" type="String" required="true" description="The id to identify the instance the component" />
+</aura:event>

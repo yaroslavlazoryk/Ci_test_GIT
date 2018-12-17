@@ -1,0 +1,26 @@
+<!--
+ - Created by new on 06.07.2017.
+ -->
+
+<apex:page id="SavePage" standardController="Account" extensions="EditSaveExtension" cache="false">
+    <apex:form >
+        <apex:pageBlock >
+            <apex:pageBlockSection >
+                <apex:inputField value="{!account.Name}">
+
+                </apex:inputField>
+                <apex:inputField value="{!account.Industry}"/>
+            </apex:pageBlockSection>
+
+            <apex:pageBlockButtons >
+                <apex:commandButton value="Cancel" action="{!goToEditPage}">
+
+                </apex:commandButton>
+                <apex:commandButton value="Save" action="{!goToEditPageSaveButton}">
+
+                </apex:commandButton>
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+    </apex:form>
+
+</apex:page>

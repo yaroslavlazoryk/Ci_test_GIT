@@ -1,0 +1,57 @@
+.THIS .slds-lookup__menu {
+	display: unset;
+}
+
+.THIS .deleteIcon {
+	padding-left: 8px;
+	color: #888888;
+}
+.THIS .deleteIcon::after {
+	content: "\2715";
+}
+
+.THIS .buttonFix {
+	margin-right: 10px;
+}
+
+.THIS .hide {
+	display: none;
+}
+
+.THIS .buttonIncrease {
+	width: 1.5rem;
+	height: 1.5rem;
+	margin: 3.5px 0px 3.5px 0;
+}
+
+.THIS .pill-fix {
+	padding-left: 0.35rem;
+	width: 100%;
+	background: transparent;
+}
+
+.THIS .searchFix {
+	right: 0.75rem;
+	margin-top: -0.6rem;
+}
+
+.THIS .inlineFix {
+	display: inline-block;
+}
+
+.THIS .required {
+	padding-right: 2px;
+	color: rgb(194, 57, 52);
+}
+
+.THIS .inputFix {
+	background: transparent;
+}
+
+.THIS .slds-input:active {
+	background: transparent;
+}
+
+.THIS .slds-input:focus {
+	background: transparent;
+}

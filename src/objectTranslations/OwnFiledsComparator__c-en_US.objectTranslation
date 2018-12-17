@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>OwnFiledsComparator</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>OwnFiledsComparators</value>
+    </caseValues>
+    <fields>
+        <label><!-- first --></label>
+        <name>first__c</name>
+    </fields>
+    <fields>
+        <label><!-- reason --></label>
+        <name>reason__c</name>
+    </fields>
+    <fields>
+        <label><!-- second --></label>
+        <name>second__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

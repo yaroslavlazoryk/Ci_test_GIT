@@ -1,0 +1,33 @@
+<aura:component >
+    <!-- resources -->
+    <ltng:require styles="{!$Resource.bulma + '/bulma-0.4.2/css/bulma.css'}" />
+	
+    <!-- attributes -->
+    <aura:attribute name="allItems" type="list"></aura:attribute>
+    
+    <!-- event handlers -->
+    <aura:handler name="init" action="{!c.doInit}" value="{!this}"></aura:handler>
+    <aura:handler name="pipelineChange" event="c:pipelineChange" action="{!c.onPipelineChanged}"></aura:handler>
+    
+    <div class="columns" >
+        <c:pipeline title="New" items="{!v.allItems}"></c:pipeline>
+        <c:pipeline title="Closed" items="{!v.allItems}"></c:pipeline>
+        <c:pipeline title="Deleted" items="{!v.allItems}"></c:pipeline>
+    </div>
+    
+    <lightning:button  variant="base" label="Base" title="Base action"  onclick="{!c.myAction}"/>
+    
+     <lightning:button variant="base" label="Base" title="Base action" onclick="{! c.handleClick }"/>
+
+    <!-- Neutral variant (default) -->
+    <lightning:button label="Neutral" title="Neutral action" onclick="{! c.handleClick }"/>
+
+    <!-- Brand variant: Identifies the primary action in a group of buttons -->
+    <lightning:button variant="brand" label="Brand action" title="Brand action" onclick="{! c.handleClick }" />
+
+    <!-- Destructive variant: Identifies a potentially negative action -->
+    <lightning:button variant="destructive" label="Destructive" title="Destructive action" onclick="{! c.handleClick }"/>
+
+    <!-- Success variant: Identifies a successful action -->
+    <lightning:button variant="success" label="Success" title="Success" onclick="{! c.handleClick }"/>
+</aura:component>

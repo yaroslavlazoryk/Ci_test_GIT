@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <formFactors>Large</formFactors>
+    <label>Sales Console</label>
+    <navType>Console</navType>
+    <tab>standard-home</tab>
+    <tab>standard-Lead</tab>
+    <tab>standard-Account</tab>
+    <tab>standard-Contact</tab>
+    <tab>standard-Opportunity</tab>
+    <tab>standard-Campaign</tab>
+    <tab>standard-Task</tab>
+    <tab>standard-Event</tab>
+    <tab>standard-report</tab>
+    <tab>standard-Dashboard</tab>
+    <tab>standard-Feed</tab>
+    <tab>standard-CollaborationGroup</tab>
+    <tab>standard-File</tab>
+    <tab>lvl1__c</tab>
+    <tab>lvl2__c</tab>
+    <tab>lvl3__c</tab>
+    <tab>lvl4__c</tab>
+    <tab>lvl5__c</tab>
+    <tab>lvl6__c</tab>
+    <tab>lvl7__c</tab>
+    <tab>lvl10__c</tab>
+    <tab>lvl11__c</tab>
+    <tab>lvl12__c</tab>
+    <tab>lvl8__c</tab>
+    <tab>lvl9__c</tab>
+    <tab>lvl13__c</tab>
+    <tab>lvl14__c</tab>
+    <tab>lvl15__c</tab>
+    <tab>lvl16__c</tab>
+    <tab>lvl17__c</tab>
+    <tab>lvl18__c</tab>
+    <tab>lvl19__c</tab>
+    <tab>lvl20__c</tab>
+    <tab>lvl21__c</tab>
+    <tab>lvl22__c</tab>
+    <uiType>Lightning</uiType>
+    <utilityBar>LightningSalesConsole_UtilityBar</utilityBar>
+</CustomApplication>

@@ -1,0 +1,12 @@
+<!--
+ - Created by new on 23.06.2017.
+ -->
+
+<apex:page id="CreateContact" standardController="Contact">
+    <apex:form >
+        <apex:inputField value="{!Contact.FirstName}"></apex:inputField>
+        <apex:inputField value="{!Contact.LastName}"></apex:inputField>
+        <apex:inputField value="{!Contact.Email}"></apex:inputField>
+        <apex:commandButton value="Save" action="{!save}"></apex:commandButton>
+    </apex:form>
+</apex:page>

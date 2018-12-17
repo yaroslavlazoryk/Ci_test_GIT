@@ -1,0 +1,13 @@
+<aura:component >
+    <aura:attribute name="containerId" type="String"/>
+    <aura:attribute name="selectedContacts" type="List"/>
+    <aura:attribute name="selectedRecord" type="sobject" default="{}" description="Use,for store SELECTED sObject Record"/>
+
+    <aura:handler name="oSelectedRecordEvent" event="c:selectedsObjectsRecordEvent" action="{!c.selectRecord}"/>
+
+    <div class="slds-modal__content slds-p-around_medium" id="componentsContainer" onclick="{!c.hideLookupResultList}">
+        <div style="height:500px;">
+            <c:lookup aura:id="lookupId" objectAPIName="account" IconName="standard:account" label="Account name" />
+        </div>
+    </div>
+</aura:component>

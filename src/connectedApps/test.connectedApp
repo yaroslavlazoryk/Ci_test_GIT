@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>yaroslavlazoryk@gmail.com</contactEmail>
+    <label>test</label>
+    <oauthConfig>
+        <callbackUrl>https://</callbackUrl>
+        <consumerKey>3MVG9HxRZv05HarSsNAQHTrwECm7GmNLzv.BKQ03XrFAefM6bsJD2dGCWejwE0Xha7FhxMgq5ntVo.WH1qqg4</consumerKey>
+        <scopes>Api</scopes>
+    </oauthConfig>
+</ConnectedApp>

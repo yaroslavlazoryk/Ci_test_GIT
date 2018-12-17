@@ -1,0 +1,10 @@
+<!--
+ - Created by new on 23.06.2017.
+ -->
+
+<apex:page id="OppView" standardController="Opportunity">
+    <apex:outputField value="{! Opportunity.Name}"/>
+    <apex:outputField value="{! Opportunity.Amount}"/>
+    <apex:outputField value="{! Opportunity.CloseDate}"/>
+    <apex:outputField value="{! Opportunity.Account.Name}"/>
+</apex:page>

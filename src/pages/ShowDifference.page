@@ -1,0 +1,23 @@
+<!--
+ - Created by new on 06.07.2017.
+ -->
+
+<apex:page id="ShowDifference" controller="ShowDifferenceController">
+    <apex:form >
+        <apex:pageBlock >
+            <apex:pageBlockSection >
+                <apex:inputText value="{!first}" onKeyUp="sayHello()" />
+                <apex:inputText value="{!second}" onKeyUp="sayHello()"/>
+                <apex:actionFunction name="sayHello" action="{!getDif}" rerender="out" />
+
+            </apex:pageBlockSection>
+            <apex:pageBlockSection id="out" >
+                <apex:outputText value="{!reason}" rendered="{!vis}"  ></apex:outputText>
+            </apex:pageBlockSection>
+            <apex:pageBlockButtons >
+                <apex:commandButton value="save" action="{!save}"/>
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+
+    </apex:form>
+</apex:page>

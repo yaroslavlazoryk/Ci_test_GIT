@@ -1,0 +1,15 @@
+<apex:page id="SendLatestAttachment" controller="SendLatestAttachment">
+    <apex:form >
+        <apex:pageBlock title="Send attachment">
+            <apex:outputText value="Recipient:"/> <apex:inputText style="width: 100%;" value="{!emailAddress}"/><br/>
+            <apex:outputText value="Subject  :"/><apex:inputText style="width: 100%;" value="{!emailSubject}"/><br/>
+            
+            <apex:inputTextarea richtext="true"  label="Email body" value="{!emailBody}"/><br/>
+             <apex:selectList value="{!selectedAttachmentIds}" multiselect="true" size="5">
+                <apex:selectOptions value="{!attachments}"/>
+            </apex:selectList>
+            <p/>
+            <apex:commandButton action="{!doSend}" value="Send"/>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

@@ -1,0 +1,27 @@
+<!--
+ - Created by new on 26.01.2018.
+ -->
+
+<aura:component description="testForComunity" controller="testForCommunityClass" implements="forceCommunity:availableForAllPageTypes">
+    <aura:attribute name="License" type="String"/>
+    <lightning:input name="UserNameInput" label="User Name" />
+    <!--<aura:if isTrue="{!v.License != null}">-->
+        <lightning:input name="Role" label="Role" />
+    <!--</aura:if>-->
+    <lightning:input label="License" aura:id="LicenseId" name="License" onchange="{!c.fillLicense}"/>
+
+    <lightning:button  variant="base" label="Base" title="Base action"  onclick="{!c.myAction}"/>
+    <lightning:button variant="base" label="Base" title="Base action" onclick="{! c.handleClick }"/>
+
+    <!-- Neutral variant (default) -->
+    <lightning:button label="Neutral" title="Neutral action" onclick="{! c.handleClick }"/>
+
+    <!-- Brand variant: Identifies the primary action in a group of buttons -->
+    <lightning:button variant="brand" label="Brand action" title="Brand action" onclick="{! c.handleClick }" />
+
+    <!-- Destructive variant: Identifies a potentially negative action -->
+    <lightning:button variant="destructive" label="Destructive" title="Destructive action" onclick="{! c.handleClick }"/>
+
+    <!-- Success variant: Identifies a successful action -->
+    <lightning:button variant="success" label="Success" title="Success" onclick="{! c.handleClick }"/>
+</aura:component>

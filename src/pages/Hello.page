@@ -1,0 +1,67 @@
+<!--
+ - Created by new on 05.07.2017.
+ -->
+
+<apex:page standardController="Account" extensions="HelloController" recordSetVar="accounts"> <!--controller="HelloController"-->
+    hello {! $User.FirstName}
+     <apex:form >
+        <apex:pageBlock id="pageblock">
+            <apex:pageBlockSection >
+               <apex:inputText value="{!name}"/>
+                <apex:outputText value="{!name}"/>
+               <!-- <apex:actionFunction name="sendId" action="{!getContacts}" reRender="contactDetails">
+                    <apex:param value="" assignTo="{!idishnik}"></apex:param>
+                </apex:actionFunction>-->
+
+                <apex:dataList value="{!accounts}" var="item">
+
+                    <apex:commandLink value="{!item.name}" action="{!getContacts}" reRender="contactDetails, pageblock">
+                        <apex:param name="Item ID" value="{!item.Id}" assignTo="{!idishnik}"/>
+
+                    </apex:commandLink>
+
+                </apex:dataList>
+
+                <!--<apex:outputText id = "contactDetails">
+                    <!--<apex:param value="{!item.contacts}"/>-->
+                <!--</apex:outputText>-->
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+         <apex:pageBlock id="contactDetails">
+             <apex:pageBlockSection >
+                 <apex:repeat value="{!contacts}" var="contact">
+                 {!contact.Name};
+                 </apex:repeat>
+             </apex:pageBlockSection>
+         </apex:pageBlock>
+    </apex:form>
+
+
+    <!-- <p>You are viewing the {! account.name} account.</p>
+    <p>You are viewing the {! account.Id} Id.</p>
+    <apex:pageBlock>
+        <apex:pageBlockSection>
+             <apex:outputField value="{! account.name}" ></apex:outputField>
+        </apex:pageBlockSection>
+        <apex:dataTable  value="{!account.contacts}" var="item">
+            <apex:column value="{!item.name}"></apex:column>
+        </apex:dataTable>
+        <apex:dataList value="{!account.contacts}" var="item">
+            {!item.name}
+            <!--<apex:param name = "cid" value="{!item.id}"/>-->
+
+       <!-- </apex:dataList>
+        <apex:repeat value="{!account.contacts}" var="item">
+            {!item.Name}
+        </apex:repeat>
+    </apex:pageBlock>
+    <apex:form >
+        <apex:pageBlock >
+            <apex:pageBlockSection >
+        <apex:inputField value="{!account.Name}"></apex:inputField>
+        <apex:inputField value="{!account.Ownership}"/>
+        <apex:commandButton value="quickSave" action="{!quickSave}"></apex:commandButton>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>-->
+</apex:page>

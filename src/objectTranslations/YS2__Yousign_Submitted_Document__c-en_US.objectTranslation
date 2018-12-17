@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Document Id --></label>
+        <name>YS2__Document_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Document URL --></label>
+        <name>YS2__Document_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Error Message --></label>
+        <name>YS2__Error_Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response --></label>
+        <name>YS2__Response__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>YS2__Status__c</name>
+        <picklistValues>
+            <masterLabel>Failed</masterLabel>
+            <translation><!-- Failed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Received</masterLabel>
+            <translation><!-- Received --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sent</masterLabel>
+            <translation><!-- Sent --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Yousign Document Id --></label>
+        <name>YS2__Yousign_Document_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Yousign Procedure --></label>
+        <name>YS2__Yousign_Procedure__c</name>
+        <relationshipLabel><!-- Yousign Submitted Documents --></relationshipLabel>
+    </fields>
+</CustomObjectTranslation>

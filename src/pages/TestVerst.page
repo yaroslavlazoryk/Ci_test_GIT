@@ -1,0 +1,25 @@
+<!--
+ - Created by new on 12.07.2017.
+ -->
+
+<apex:page id="TestVerst">
+    <div style="width:100%; background-color:red; height:100px">
+        привіт
+        <!--<apex:image value="{!URLFOR($Resource.vfimagetest,'cats/kitten2.jpg')}"/>-->
+        <!--<apex:image value="{!URLFOR($Resource.vfimagetest,'cats/kitten2.jpg')}"/>-->
+        <div style="float:right; ">
+            <img src="{!URLFOR($Resource.vfimagetest,'cats/kitten1.jpg')}" style="width:100px; height:100px;border-radius:20px;">
+            </img>
+        </div>
+    </div>
+    <apex:stylesheet value="{!URLFOR($Resource.vfimagetest,'cats/st.css')}"/>
+    <div class="testClass" style="margin:20px 20px 0px 0px;float:left;width:20%; height:20px">
+        1
+    </div>
+    <div style="margin:25px 20px 0px 0px;float:left;width:70%;background-color:green; height:20px">
+        2
+    </div>
+    <div style="margin-top:20px;float:left;width:30%;background-color:green; height:20px">
+        3
+    </div>
+</apex:page>

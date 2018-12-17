@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>lvl8</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>lvls8</value>
+    </caseValues>
+    <fields>
+        <label><!-- lvl9 --></label>
+        <name>lvlUp__c</name>
+        <relationshipLabel><!-- lvls8 --></relationshipLabel>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

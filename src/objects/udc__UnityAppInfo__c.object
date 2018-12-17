@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <description>Unity application Information</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>udc__LicenseKey__c</fullName>
+        <deprecated>false</deprecated>
+        <description>License Key used to Access the Unity Application Server</description>
+        <externalId>false</externalId>
+        <label>License Key</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>udc__ServiceEndpoint__c</fullName>
+        <deprecated>false</deprecated>
+        <description>URL For Unity Web Service Endpoint</description>
+        <externalId>false</externalId>
+        <label>Service Endpoint</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <label>UnityAppInfo</label>
+    <visibility>Public</visibility>
+</CustomObject>

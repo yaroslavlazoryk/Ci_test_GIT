@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Car</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Cars</value>
+    </caseValues>
+    <fields>
+        <label><!-- Model --></label>
+        <name>Model__c</name>
+    </fields>
+    <fields>
+        <label><!-- Road --></label>
+        <name>Road__c</name>
+        <relationshipLabel><!-- Cars --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Speed --></label>
+        <name>Speed__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,64 @@
+<aura:component controller="LookupController" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global">
+    <aura:attribute name="selectedRecord" type="sobject" default="{}" description="Use,for store SELECTED sObject Record"/>
+    <aura:attribute name="listOfSearchRecords" type="List" description="Use,for store the list of search records which returns from apex class"/>
+    <aura:attribute name="SearchKeyWord" type="string"/>
+    <aura:attribute name="objectAPIName" type="string" default=""/>
+    <aura:attribute name="IconName" type="string" default=""/>
+    <aura:attribute name="label" type="string" default=""/>
+    <aura:attribute name="Message" type="String" default=""/>
+
+    <aura:handler event="aura:waiting" action="{!c.showSpinner}"/>
+    <aura:handler event="aura:doneWaiting" action="{!c.hideSpinner}"/>
+
+	<aura:method name="hideLookupResult" action="{!c.hideResultList}">
+        <aura:attribute name="componentId" type="String"/>
+    </aura:method>
+
+    <aura:method name="selectRecord" action="{!c.selectRecord}">
+        <aura:attribute name="selectedRecord" type="sObject"/>
+    </aura:method>
+
+	<div class="slds-form-element">
+        <div class="slds-form-element__control" id="lookupContainer">
+            <label class="slds-form-element__label" for="combobox-unique-id">
+                    {!v.label}
+            </label>
+            <div aura:id="lookup-pill" class="slds-pill-container slds-hide">
+                <span class="slds-pill" style="width:100%">
+                    <span class="slds-icon_container  slds-combobox__input-entity-icon" title="record">
+                        <lightning:icon class="slds-icon slds-icon slds-icon_small slds-icon-text-default" iconName="{!v.IconName}" size="x-small" alternativeText="icon"/>
+                        <span class="slds-assistive-text"></span>
+                    </span>
+                    <span  class="slds-pill__label slds-p-left_x-large">
+                        {!v.selectedRecord.Name}
+                    </span>
+                    <button class="slds-button slds-button--icon slds-pill__remove" onclick="{!c.clear}">
+                        <lightning:icon class="slds-button__icon" iconName="utility:close" size="x-small" alternativeText="search"/>
+                        <span class="slds-assistive-text">Remove</span>
+                    </button>
+                </span>
+            </div>
+            <div aura:id="lookupDropdownContainer" class="slds-combobox_container">
+                <div aura:id="lookupDropdown" id="combobox" class="slds-combobox slds-dropdown-trigger slds-dropdown-trigger_click slds-combobox-lookup" aria-expanded="false" aria-haspopup="listbox" role="combobox">
+                    <div id="parent" class="slds-combobox__form-element slds-input-has-icon slds-input-has-icon_right ">
+                        <span class="slds-icon_container slds-icon-standard-contact slds-combobox__input-entity-icon slds-hide" title="contact">
+                            <lightning:icon class="slds-icon slds-icon slds-icon_small slds-icon-text-default" iconName="{!v.IconName}" size="x-small" alternativeText="icon"/>
+                        </span>
+                        <ui:inputText aura:id="inputText" required="true" focus="{!c.showResultList}" updateOn="keyup" keyup="{!c.keyPressController}" value="{!v.SearchKeyWord}" class="slds-input slds-combobox__input" placeholder="Search Salesforce"/>
+                    </div>
+                    <ul id="resultList" class="slds-listbox slds-listbox_vertical slds-dropdown slds-dropdown_fluid" role="listbox" >
+                        <center>
+                            <ui:spinner aura:id="spinner"/>
+                        </center>
+                        <aura:iteration items="{!v.listOfSearchRecords}" var="singleRec">
+                            <c:lookupRecord oRecord="{!singleRec}" IconName="{!v.IconName}"/>
+                        </aura:iteration>
+                        <center>
+                            {!v.Message}
+                        </center>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</aura:component>
